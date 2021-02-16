@@ -1,0 +1,22 @@
+.post_image_div {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    margin: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  .post_image_div img {
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .post_image_div {
+      height: 120px;
+    }
+  }
