@@ -137,7 +137,7 @@ const OtherProfile = ({ match }) => {
             </div>
             {
               otherUser._id !== user._id &&
-                (otherUser.followers.includes(user._id) ? (
+                (otherUser.followers.some( f => f._id === user._id) ? (
                   <Button
                     className="follow_unfollow_button"
                     onClick={() => {

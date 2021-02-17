@@ -7,20 +7,22 @@ const fs = require("fs");
 
 //Get user by it's Id PARAM--------------------
 exports.getUserById = (req, res, next, id) => {
-  User.findById(id).exec((err, user) => {
-    if (err || !user) {
-      return res.status(400).json({
-        error: "No User Found in DB",
-      });
-    }
-    user.salt = undefined;
-    user.encry_password = undefined;
-    user.createdAt = undefined;
-    user.updatedAt = undefined;
-    user.profile_photo.data = undefined;
-    req.profile = user;
-    next();
-  });
+  User.findById(id)
+    .populate("followers", "_id name profile_photo")
+    .exec((err, user) => {
+      if (err || !user) {
+        return res.status(400).json({
+          error: "No User Found in DB",
+        });
+      }
+      user.salt = undefined;
+      user.encry_password = undefined;
+      user.createdAt = undefined;
+      user.updatedAt = undefined;
+      user.profile_photo.data = undefined;
+      req.profile = user;
+      next();
+    });
 };
 
 //Get Another User--------------------
@@ -56,9 +58,17 @@ exports.followUser = (req, res) => {
           $push: { following: req.body.followId },
         },
         { new: true }
-      )
+      ).populate("followers", "_id name profile_photo")
+        .populate("following", "_id name profile_photo")
         .select("-password -encry_password -salt -createdAt -updatedAt")
         .then((result) => {
+          result.profile_photo.data = undefined;
+          result.followers.map((followedUser, index) => {
+            followedUser.profile_photo.data = undefined;
+          })
+          result.following.map((followingUser, index) => {
+            followingUser.profile_photo.data = undefined;
+          })
           res.json(result);
         })
         .catch((err) => {
@@ -91,7 +101,11 @@ exports.unFollowUser = (req, res) => {
         },
         { new: true }
       )
+        .populate("followers", "_id name profile_photo")
+        .populate("following", "_id name profile_photo")
+        .select("-password -encry_password -salt -createdAt -updatedAt")
         .then((result) => {
+          result.profile_photo.data = undefined;
           res.json(result);
         })
         .catch((err) => {
@@ -189,12 +203,21 @@ exports.getProfilePhoto = (req, res, next) => {
 //Get user profile--------------------
 exports.getOtherUser = (req, res) => {
   User.findOne({ _id: req.OtherProfile._id })
+    .populate("followers", "_id name profile_photo")
+    .populate("following", "_id name profile_photo")
     .then((user) => {
       user.salt = undefined;
       user.encry_password = undefined;
       user.createdAt = undefined;
       user.updatedAt = undefined;
       user.profile_photo.data = undefined;
+      user.followers.map((followedUser, index) => {
+        followedUser.profile_photo.data = undefined;
+      })
+      user.following.map((followingUser, index) => {
+        followingUser.profile_photo.data = undefined;
+      })
+      
       Post.find({ postedBy: req.OtherProfile._id })
         .populate("postedBy", "_id name profile_photo")
         .sort("-createdAt")

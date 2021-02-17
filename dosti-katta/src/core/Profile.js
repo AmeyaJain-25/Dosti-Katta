@@ -91,7 +91,7 @@ const Profile = () => {
         setValues({ ...values, profile_photo: "", formData: "" });
         getMYPosts();
         setTimeout(() => {
-          successNotify("Please wait for some time to see your photo")  
+          successNotify("Refresh the Page or Please wait for some time to see your photo")  
         }, 2000);
       })
       .catch((err) => console.log(err));
