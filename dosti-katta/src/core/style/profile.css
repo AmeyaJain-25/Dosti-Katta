@@ -25,6 +25,16 @@
   background-color: #ffe7c3;
 }
 
+/* Modal ------------------- */
+.searched_user {
+  padding: 6px 10px;
+}
+.searched_user span {
+  padding: 4px;
+  margin: 3px;
+  font-size: 1.3em;
+}
+
 /* Left Box ----------- */
 .profile_page .left_box {
     padding: 10px 30px;
@@ -140,6 +150,7 @@
   .profile_page .top_box .follow_unfollow_status .following,
   .profile_page .top_box .follow_unfollow_status .posts {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;

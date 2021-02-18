@@ -53,6 +53,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   .profile_card_box .bottom_profile_card_box p {
     margin: 0;
