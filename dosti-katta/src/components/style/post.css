@@ -33,6 +33,12 @@
     font-size: 1.5em;
     font-weight: 700;
     margin-top: 10px;
+    margin-bottom: 4px;
+    color: black;
+  }
+  .top_post_box .left_post_box .postedBy_box h6 {
+    padding-top: 0px;
+    margin-top: 0px;
     color: black;
   }
   .top_post_box .right_post_box {

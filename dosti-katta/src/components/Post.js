@@ -107,6 +107,7 @@ const Post = ({ post }) => {
                 }}
               />
               <h1>{post.postedBy.name}</h1>
+              <h6>@{post.postedBy.username}</h6>
             </Link>
           </Row>
         </Col>

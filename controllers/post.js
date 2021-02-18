@@ -7,7 +7,7 @@ const fs = require("fs");
 //Get post by it's Id PARAM--------------------
 exports.getPostById = (req, res, next, id) => {
   Post.findById(id)
-    .populate("postedBy", "_id name profile_photo")
+    .populate("postedBy", "_id name username profile_photo")
     .exec((err, post) => {
       if (err) {
         return res.status(400).json({
@@ -125,7 +125,7 @@ exports.updatePost = (req, res) => {
 exports.getMyPosts = (req, res) => {
   Post.find({ postedBy: req.profile._id })
     .sort("-createdAt")
-    .populate("postedBy", "_id name")
+    .populate("postedBy", "_id name username")
     .exec((err, myposts) => {
       if (err) {
         return res.status(400).json({
@@ -152,7 +152,7 @@ exports.getPhoto = (req, res, next) => {
 exports.getMyFollowingPosts = (req, res) => {
   Post.find({ postedBy: { $in: req.profile.following } })
     .sort("-createdAt")
-    .populate("postedBy", "_id name profile_photo")
+    .populate("postedBy", "_id name username profile_photo")
     .exec((err, myposts) => {
       if (err) {
         return res.status(400).json({
@@ -170,7 +170,7 @@ exports.getMyFollowingPosts = (req, res) => {
 //Get All Posts--------------------
 exports.getAllPost = (req, res) => {
   Post.find()
-    .populate("postedBy", "_id name profile_photo")
+    .populate("postedBy", "_id name username profile_photo")
     .sort("-createdAt")
     .exec((err, posts) => {
       if (err) {
