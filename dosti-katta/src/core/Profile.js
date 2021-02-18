@@ -131,12 +131,20 @@ const Profile = () => {
           fontFamily: "'Truculenta', sans-serif"
         }}
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton
+        style={{
+          background: "#86b7fe"
+        }}
+        >
           <Modal.Title id="example-custom-modal-styling-title">
             Following
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body
+        style={{
+          background: "#ffe7c3"
+        }}
+        >
           {profile.following.map((f, i) => {
             return (
               <div className="searched_user" key={i}>
@@ -175,12 +183,20 @@ const Profile = () => {
           fontFamily: "'Truculenta', sans-serif"
         }}
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton
+        style={{
+          background: "#86b7fe"
+        }}
+        >
           <Modal.Title id="example-custom-modal-styling-title">
             Followers
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body
+        style={{
+          background: "#ffe7c3"
+        }}
+        >
           {profile.followers.map((f, i) => {
             return (
               <div className="searched_user" key={i}>
