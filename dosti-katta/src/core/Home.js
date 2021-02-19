@@ -177,6 +177,7 @@ const Home = () => {
                       }}
                     />
                     <span>{userData.name}</span>
+                    {/* <span>{userData.username}</span> */}
                   </Link>
                 </div>
               );
