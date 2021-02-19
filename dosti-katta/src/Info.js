@@ -26,7 +26,7 @@ const Info = () => {
             <h1 style={{textAlign: "center", marginTop: "10px", marginBottom: "0"}}>Made with <BsHeartFill style={{color: "#f44336"}}/> by </h1>
             <Row>
                 <Col md="6">
-                    <div style={{margin: "5px 80px", textAlign: "center"}}>
+                    <div style={{margin: "15px 80px", textAlign: "center"}}>
                         <h1 style={{fontFamily: "'Skranji', cursive", margin: "0", padding: "0"}}>Ameya</h1>
                         <h1 style={{fontFamily: "'Skranji', cursive", margin: "0", padding: "0"}}>Jain</h1>
                         <FaNodeJs style={{fontSize: "3.2em", marginTop: "5px", color: "#3c873a"}}/>
@@ -38,7 +38,7 @@ const Info = () => {
                     </div>
                 </Col>
                 <Col md="6">
-                    <div style={{margin: "30px 80px 5px 80px", textAlign: "center"}}>
+                    <div style={{margin: "15px 80px", textAlign: "center"}}>
                         <h1 style={{fontFamily: "'Skranji', cursive", margin: "0", padding: "0"}}>Sarthak</h1>
                         <h1 style={{fontFamily: "'Skranji', cursive", margin: "0", padding: "0"}}>Musmade</h1>
                         <SiAdobexd style={{fontSize: "3em", marginTop: "5px", color: "#7b1fa2"}}/>
