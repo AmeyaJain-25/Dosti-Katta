@@ -101,8 +101,8 @@ const Post = ({ post }) => {
                 isPhoto={post.postedBy.profile_photo ? true : false}
                 photoId={post.postedBy._id}
                 css={{
-                  width: window.innerWidth > 350 ? "80px" : "60px",
-                  height: window.innerWidth > 350 ? "80px" : "60px",
+                  width: window.innerWidth > 360 ? "80px" : "60px",
+                  height: window.innerWidth > 360 ? "80px" : "60px",
                   borderRadius: "200px",
                 }}
               />
