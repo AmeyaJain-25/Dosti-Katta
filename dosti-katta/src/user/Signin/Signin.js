@@ -127,8 +127,7 @@ const Signin = () => {
               </Row>
               <Row className="below_logo">
                 <h4>
-                  Meet millions of new people from all over the world, wherever
-                  you are. Have a good chat, make new friend.
+                  Meet millions of new people from all over the world and connect with them to make new friends.
                 </h4>
               </Row>
             </Container>

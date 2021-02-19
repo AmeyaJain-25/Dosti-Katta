@@ -1,5 +1,5 @@
 # Dosti Katta
-### A social media application where people meet millions of new people from all over the world, wherever you are and have a good chat with them 👬
+### A social media application where people meet millions of new people from all over the world and connect with them to make new friends 👬
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55b3548f-b1d2-491f-b6a1-25e26c84f920/deploy-status)](https://app.netlify.com/sites/dostikatta/deploys)
 
