@@ -3,7 +3,7 @@ import "./core/style/home.css"
 //Packages-----------------
 import { Col, Container, Row } from "react-bootstrap";
 import { SiAdobexd } from "react-icons/si"
-import { FaGithub, FaLinkedin, FaNodeJs, FaBehanceSquare, FaFileCode } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaNodeJs, FaBehanceSquare } from "react-icons/fa"
 import { BsHeartFill } from "react-icons/bs"
 //Components-----------------
 import Menu from "./core/Menu";
@@ -19,11 +19,11 @@ const Info = () => {
                 <img src={dostiKatta} alt="loading..." style={{marginTop: "10px", width: "160px"}}/>
             </div>
         <Container style={{margin: "5x 0px"}}>
-            <h1 style={{textAlign: "center", marginTop: "10px", marginBottom: "0"}}>Made with <BsHeartFill style={{color: "#f44336"}}/> by </h1>
             <div style={{margin: "5px", textAlign: "center"}}>
-            <a href="https://github.com/AmeyaJain-25/Dosti-Katta" target="_blank" title="Code of Dosti Katta"><FaFileCode style={{fontSize: "2em", margin: "5px", color: "#000"}} /></a>
-            <a href="https://www.behance.net/gallery/113668161/Dosti-Katta" target="_blank" title="UI of Dosti Katta"><FaBehanceSquare style={{fontSize: "2em", margin: "5px", color: "#0057ff"}} /></a>
+                <a href="https://github.com/AmeyaJain-25/Dosti-Katta" target="_blank" title="Code of Dosti Katta"><FaGithub style={{fontSize: "2em", margin: "5px", color: "#000"}} /></a>
+                <a href="https://www.behance.net/gallery/113668161/Dosti-Katta" target="_blank" title="UI of Dosti Katta"><FaBehanceSquare style={{fontSize: "2em", margin: "5px", color: "#0057ff"}} /></a>
             </div>
+            <h1 style={{textAlign: "center", marginTop: "10px", marginBottom: "0"}}>Made with <BsHeartFill style={{color: "#f44336"}}/> by </h1>
             <Row>
                 <Col md="6">
                     <div style={{margin: "5px 80px", textAlign: "center"}}>
