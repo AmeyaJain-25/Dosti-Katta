@@ -1,5 +1,3 @@
-![Ameya's github stats](https://github-readme-stats.vercel.app/api?username=AmeyaJain-25&show_icons=true&theme=tokyonight)
-
 # Dosti Katta
 ### A social media application where people meet millions of new people from all over the world, wherever you are and have a good chat with them 👬
 
