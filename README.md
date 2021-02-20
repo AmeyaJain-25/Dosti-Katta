@@ -1,10 +1,16 @@
 # Dosti Katta
 ### A social media application where people meet millions of new people from all over the world and connect with them to make new friends 👬
 
+<p align="center">
+  <img src="Images/LogoWithBackground.png" width="400" title="Dosti Katta">
+</p>
+
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55b3548f-b1d2-491f-b6a1-25e26c84f920/deploy-status)](https://app.netlify.com/sites/dostikatta/deploys)
 
-
 ---
+
 # Website Url - <em>[Dosti Katta](https://dostikatta.netlify.app/)</em>
 
 
@@ -27,6 +33,11 @@ Web Application made by [Ameya Jain](https://github.com/AmeyaJain-25) in MERN St
 
 
 # Built With
+
+<p>
+  <img src="https://miro.medium.com/max/244/1*DX5Z6zWBnEPfQe508so1mQ.png" width="200">
+</p>
+
 ```
 TECHNOLOGIES:
   - DATABASE            MongoDb
@@ -34,6 +45,16 @@ TECHNOLOGIES:
   - CLIENT SIDE         ReactJs
 ```
 
+# Glimpse of the Application
+
+### Home
+![alt text](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/Home.png?raw=true)
+
+### View Post
+![alt text](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/ViewPostImage.png?raw=true)
+
+### User Profile 
+![alt text](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/OtherProfile.png?raw=true)
 
 # Creators
 
