@@ -30,7 +30,7 @@
 UI made by [Sarthak Musmade](https://github.com/Sarthak1812) using AdobeXD. You can have a look on [Behance](https://www.behance.net/gallery/113668161/Dosti-Katta)
 
 # Web Development
-Web Application made by [Ameya Jain](https://github.com/AmeyaJain-25) in MERN Stack. 
+Web Application made by [Ameya Jain](https://github.com/AmeyaJain-25) using MERN Stack. 
 
 
 # Built With
