@@ -25,8 +25,8 @@ const Home = () => {
 
   //useEffect---------------
   useEffect(() => {
-    // getAllPosts();
-      getMyFollowingPosts();
+    getAllPosts();
+      // getMyFollowingPosts();
   }, []);
 
   //Get All Post Function---------------
