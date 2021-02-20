@@ -7,6 +7,7 @@
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55b3548f-b1d2-491f-b6a1-25e26c84f920/deploy-status)](https://app.netlify.com/sites/dostikatta/deploys)
 
 ---
@@ -47,14 +48,19 @@ TECHNOLOGIES:
 
 # Glimpse of the Application
 
+### Sign In
+![Sign In](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/Signin.png?raw=true)
+
 ### Home
-![alt text](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/Home.png?raw=true)
+![Home](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/Home.png?raw=true)
 
 ### View Post
-![alt text](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/ViewPostImage.png?raw=true)
+![View Post](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/ViewPostImage.png?raw=true)
 
 ### User Profile 
-![alt text](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/OtherProfile.png?raw=true)
+![User Profile](https://github.com/AmeyaJain-25/Dosti-Katta/blob/master/Images/OtherProfile.png?raw=true)
+
+
 
 # Creators
 
