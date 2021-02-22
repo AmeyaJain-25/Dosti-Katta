@@ -25,11 +25,11 @@ router.post(
     check("email").isEmail().withMessage("Email is required"),
     check("username")
       .isLength({ min: 3 })
-      .withMessage("Username is required")
+      .withMessage("Username must be greater than 3 characters")
+      .isLength({ max: 10 })
+      .withMessage("Username cannot be greater than 10 characters")
       .isAlphanumeric()
-      .withMessage(
-        "User name can take only alphabets or number WITHOUT any spaces."
-      ),
+      .withMessage("User name can take only alphabets or number WITHOUT any spaces."),
     check("password")
       .isLength({ min: 3 })
       .withMessage("Password must be atleast 3 Characters"),
