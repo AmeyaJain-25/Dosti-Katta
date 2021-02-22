@@ -117,7 +117,7 @@ const ViewPost = ({ match, history }) => {
       return post.comments.map((comm, index) => {
         return (
           <Row key={index} className="comm_box">
-            <Col xs="1">
+            {/* <Col xs="1">
               <ProfilePhoto
                 isPhoto={comm.contentType ? true : false}
                 photoId={comm.postedById}
@@ -127,18 +127,19 @@ const ViewPost = ({ match, history }) => {
                   borderRadius: "200px",
                 }}
               />
-            </Col>
+            </Col> */}
             <Col xs="auto" style={{ paddingRight: "0" }}>
-              <Link
+              {console.log(comm)}
+              {/* <Link
                 to={
                   user._id === comm.postedById
                     ? "/profile"
-                    : `/otherProfile/${comm.postedById}`
+                    : `/otherProfile/${comm.postedBy._id}`
                 }
                 style={{ textDecoration: "none" }}
-              >
+              > */}
                 <h2 className="comm_postedBy">{comm.postedBy}</h2>
-              </Link>
+              {/* </Link> */}
             </Col>
             <Col xs="7">
               <h6 className="comm_text">{comm.text}</h6>
